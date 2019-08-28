@@ -1,0 +1,11 @@
+package com.demoservices.Repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.demoservices.Model.Role;
+
+
+public interface RoleRepository extends JpaRepository<Role, Long> {
+
+	Role findByName(String name);
+}
